@@ -1,0 +1,19 @@
+# Name: Fred Morrison
+# Instructor: Mark Grohman
+# Class: Computer Science Essentials
+# Section: Purple 3
+class Parallelogram:
+    """a class that represents a Parallelogram"""
+    def __init__(self, side1 = 0, side2 = 0, angle = 0):
+        self.side1 = side1
+        self.side2 = side2
+        self.angle = angle
+
+# my first instance
+p1 = Parallelogram(  )
+print(f'{p1.side1=}')
+print(f'{p1.side2=}')
+print(f'{p1.angle=}')
+
+p2 = Parallelogram()
+p3 = Parallelogram(4, 5)
