@@ -21,11 +21,14 @@ The above regular expression pattern breaks down as follows:
 | Python  |   3.13.0 |
 | PyCharm | 2024.2.3 |
 | VSCode  |   1.95.2 |
+
 ## References
+
 * [Creating CodeHS Autograders](https://help.codehs.com/en/articles/2119075-creating-autograders-to-check-student-code)
 * [pythex](https://pythex.org/)
 * [RegEx 101](https://regex101.com/)
 * [How to use Python to write a text file](https://datagy.io/python-write-text-file/)
+
 ## Change History
 
 | Date       | Description                       |
