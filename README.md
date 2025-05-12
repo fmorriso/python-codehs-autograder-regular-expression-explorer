@@ -18,7 +18,7 @@ The above regular expression pattern breaks down as follows:
 
 | Tool    |  Version |
 |:--------|---------:|
-| Python  |   3.13.0 |
+| Python  |   3.13.3 |
 | PathLib |    1.0.1 |
 | PyCharm | 2025.1.1 |
 | VSCode  |  1.100.0 |
