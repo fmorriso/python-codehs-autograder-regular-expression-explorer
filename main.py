@@ -33,10 +33,10 @@ def get_python_version() -> str:
     return f'{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}'
 
 def get_package_version(package_name: str) -> str:
-	return version(package_name)
+    return version(package_name)
 
 
-def verify_text_file_read():
+def verify_text_file_read() -> None:
     """Verify that we can read a simple text file"""
     print(f'{Path.home()=}')
     print(f'{os.getcwd()=}')
@@ -144,8 +144,8 @@ if __name__ == '__main__':
     print(f'PathLib version {get_package_version("PathLib")}')
 
     # test_remove_comments()
-    # test_file_read()
-    # test_file_write()
+    verify_text_file_read()
+    verify_text_file_write()
 
     result, message = created_min_unique_instances('Parallelogram', 2)
     print(f'{message}  Passed? = {result}')
