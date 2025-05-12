@@ -1,5 +1,6 @@
 import os, re, sys
 from pathlib import Path
+from importlib.metadata import version
 
 from file_input_out_utilities import FileInputOutput
 
@@ -30,6 +31,9 @@ def verify_remove_comments():
 def get_python_version() -> str:
     """ the version of python running this program"""
     return f'{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}'
+
+def get_package_version(package_name: str) -> str:
+	return version(package_name)
 
 
 def verify_text_file_read():
@@ -137,6 +141,7 @@ def created_a_default_instance(class_name: str):
 
 if __name__ == '__main__':
     print(f'Python version {get_python_version()}')
+    print(f'PathLib version {get_package_version("PathLib")}')
 
     # test_remove_comments()
     # test_file_read()

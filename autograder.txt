@@ -1,6 +1,8 @@
+import re
+
     def expect_min_unique_instances(self, class_name: str, min_instances: int = 2) -> bool:
         # the following line IS COMPLETELY BOGUS AND SHOULD NOT BE NECESSARY BUT THE CODE FAILS WITH A BOGUS SYNTAX ERROR WITHOUT IT!!!
-        code_without_comments = self.code_without_commments
+        code_without_comments = self.code_without_comments
         pattern = f"\\b\\w+\\s*=\\s*{class_name}\\s*\\("
         matches = re.findall(pattern, code_without_comments)
         if re.search(pattern, code_without_comments) is None:
@@ -29,7 +31,7 @@
      def created_a_default_instance(self, class_name: str) -> bool:
         """check to see there is an instance of the specified class name using the default constructor"""
         # the following line IS COMPLETELY BOGUS AND SHOULD NOT BE NECESSARY BUT THE CODE FAILS WITH A BOGUS SYNTAX ERROR WITHOUT IT!!!
-        code_without_comments = self.code_without_commments
+        code_without_comments = self.code_without_comments
         pattern = f'\\b\\w+\\s*=\\s*{class_name}\\s*\\(\\s*\\)'
         if re.search(pattern, code_without_comments) is None:
             return False # really bad if there are no instances at all

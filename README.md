@@ -19,8 +19,9 @@ The above regular expression pattern breaks down as follows:
 | Tool    |  Version |
 |:--------|---------:|
 | Python  |   3.13.0 |
-| PyCharm | 2024.2.3 |
-| VSCode  |   1.95.2 |
+| PathLib |    1.0.1 |
+| PyCharm | 2025.1.1 |
+| VSCode  |  1.100.0 |
 
 ## References
 
@@ -34,3 +35,4 @@ The above regular expression pattern breaks down as follows:
 | Date       | Description                       |
 |:-----------|:----------------------------------|
 | 2024-11-10 | Change from GitLab back to GitHub |
+| 2025-05-11 | show PathLib requirement          |
